@@ -1,0 +1,115 @@
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.person {
+    width: 45%;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #f8f8f8; /* Blauwe achtergrond voor persoon 1 */
+}
+.person-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.person:nth-child(even) {
+    background-color: #f8f8f8; /* Groene achtergrond voor persoon 2 */
+}
+
+.person h2 {
+    margin-top: 0;
+}
+
+.person-photo {
+    flex-shrink: 0;
+    width: 300px; /* Breedte van de foto */
+    margin-right: 20px;
+}
+
+.person-photo img {
+    max-width: flex;
+    height: flex;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.additional-info {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin: 5px;
+}
+.message-container {
+    width: 100%;
+    background-color: #ffd699; /* Kleur van de berichtcontainer */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.message-container h2 {
+    margin-top: 0;
+}
+
+.message-container form {
+    max-width: 400px;
+    margin: 0;
+
+}
+
+.message-container label,
+.message-container textarea {
+    width: calc(100% - 22px); /* Minus 22px voor de padding en border */
+    padding: 8px; /* Ruimte binnen het tekstvak */
+    border: 1px solid #000; /* Zwarte rand rond het tekstvak */
+    border-radius: 5px; /* Afgeronde hoeken */
+}
+
+.message-container textarea:focus {
+    outline: none; /* Verwijder de standaard focus outline */
+}
+.message-container button {
+    display: block;
+    width: flex;
+}
+
+.message-container button {
+    margin-top: 10px;
+    background-color: #ff6600; /* Oranje achtergrondkleur voor de knop */
+    color: #fff; /* Tekstkleur wit */
+    border: 1px solid #ff6600; /* Rand rond de knop in dezelfde kleur */
+    border-radius: 5px; /* Afgeronde hoeken */
+    padding: 8px 12px; /* Ruimte binnen de knop */
+    cursor: pointer; /* Cursor verandert naar een handje wanneer je over de knop gaat */
+    transition: background-color 0.3s, color 0.3s; /* Vloeiende overgang voor achtergrondkleur en tekstkleur */
+}
+
+.message-container button:hover {
+    background-color: #ff8533; /* Oranje achtergrondkleur bij hover */
+    border-color: #ff8533; /* Randkleur bij hover */
+}
+
+
+
+ .navbar-nav {
+    margin-left: auto;
+ }
+
+ .navbar-nav .nav-link {
+    font-size: 24px; /* Pas deze waarde aan naar jouw voorkeur */
+}
