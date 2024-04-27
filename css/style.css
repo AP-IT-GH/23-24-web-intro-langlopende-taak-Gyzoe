@@ -66,9 +66,9 @@
 
 }
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
@@ -78,6 +78,7 @@
   .form-group label {
     display: block;
     font-weight: bold;
+
   }
   .form-group input[type="text"],
   .form-group input[type="email"],
@@ -87,6 +88,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
   }
   .form-group textarea {
     height: 150px;
@@ -116,3 +118,21 @@
     font-size: 30px; /* Pas deze waarde aan naar jouw voorkeur */
 }
 
+.support-container {
+    background-color: #dadada;
+}
+    /* Stijl voor het kader */
+    .uitleg-kader {
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Stijl voor de foto */
+    .profiel-foto {
+        float: left; /* Zorg ervoor dat de foto naast de tekst staat */
+        margin-right: 20px; /* Ruimte tussen de foto en de tekst */
+        border-radius: 50%; /* Maak de foto rond */
+        border: 2px solid #ccc; /* Rand rond de foto */
+    }

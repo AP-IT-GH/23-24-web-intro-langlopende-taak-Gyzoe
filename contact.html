@@ -19,7 +19,7 @@
     <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-  <script src="./js/mapScript.js" defer></script>
+    <script src="./js/mapScript.js" defer></script>
     
     <style> 
       nav {
@@ -34,7 +34,7 @@
 <body class="p-0 m-0 border-0 bd-example">
   <nav class="navbar navbar-expand-md text-center" >
     <section class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./assets/onepucnhman.jpeg" alt="LOGO HIER" width="100" height="100">
+      <a class="navbar-brand" href="#"><img src="./assets/foto logo.png" alt="LOGO HIER" width="100" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,64 +69,103 @@
 <style></style>
 
 
-<div class="form-container">
-  <div class="person bg">
-      <div class="person-info">
-          <div class="person-photo">
-              <img src="./assets/admin.jpg" alt="Foto van Admin">
-          </div>
-          <div class="additional-info">
+<section class="form-container">
+  <article class="person bg">
+      <section class="person-info">
+          <article class="person-photo">
+              <img src="./assets/foto van de admin.jpg" alt="Foto van Admin">
+          </article>
+          <section class="additional-info">
               <h3>MATTIJS GYS</h3>
-              <h4>ADMIN</h4>
+              <h5>ADMIN</h5>
+              <br>
               <p>"Het delen van informatie voor anderen is voor mij het belangrijkste aan deze website, ik hoop anderen meer te kunnen informeren en helpen op onze site."  </p>
-              <div class="contact-details">
-                <p><br><br><br><br><br><br>Naam: Mattijs Gys </p>
+              <section class="contact-details">
+                <p><br><br><br><br><br>Naam: Mattijs Gys </p>
                 <p>E-mail: s154856@ap.be</p>
                 <p>Telefoon: +32485171911</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="person bg">
-      <div class="person-info">
-          <div class="person-photo">
-              <img src="./assets/webdesign.jpg" alt="Foto van Webdesigner">
-          </div>
-          <div class="additional-info">
-              <h3>BART SIMSPON</h3>
-              <h4>WEBDESIGNER</h4>
+              </section>
+          </section>
+      </section>
+  </article>
+  <article class="person bg">
+      <section class="person-info">
+          <article class="person-photo">
+              <img src="./assets/foto van de webdesigner.jpg" alt="Foto van Webdesigner">
+          </article>
+          <section class="additional-info">
+              <h3>MATHIAS GOOSENS</h3>
+              <h5><em>WEBDESIGNER</em></h5>
+              <br>
               <p>"Het maken van een website is voor mij meer dan alleen een hobby; het is een manier om mijn creativiteit te uiten en anderen te inspireren. Als webdesigner heb ik met veel toewijding en enthousiasme gewerkt aan het ontwerpen en ontwikkelen van onze website."</p>
-              <div class="contact-details">
-                <p><br><br><br>Naam: Bart Simpson</p>
-                <p>E-mail: bart@it.be</p>
+              <section class="contact-details">
+                <p><br><br>Naam: Mathias Goosens</p>
+                <p>E-mail: mathiasg@it.be</p>
                 <p>Telefoon: 0485171911</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="contact-form">
-  <form action="#" method="post">
-    <div class="form-group">
-      <label for="name">Naam:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="subject">Onderwerp:</label>
-      <input type="text" id="subject" name="subject" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Bericht:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <div class="form-group">
-      <button type="submit">Verzenden</button>
-    </div>
-  </form>
-</div>
-</body>
+              </section>
+          </section>
+      </section>
+  </article>
+</section>
+<section class="support-container">
+  <section class="row">
+    <section class="col-md-10">
+      <section class="contact-form">
+        <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactformulier</h2>
+        <form action="#" method="post">
+          <section class="form-group">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+          </section>
+          <section class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </section>
+          <section class="form-group">
+            <label for="subject">Onderwerp:</label>
+            <input type="text" id="subject" name="subject" required>
+          </section>
+          <section class="form-group">
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" required></textarea>
+          </section>
+          <section class="form-group">
+            <button type="submit">Verzenden</button>
+          </section>
+        </form>
+      </section>
+    </section>
+    <section class="col-md-2">
+      <section class="contact-info">
+        <br><br>
+        <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contact</h2>
+        <p>E-mail: <a href="mailto:site@info.be">siteinfo@ap.be</a></p>
+        <p>Nummer: +32485171911</p>
+        <ul class="list-inline social-icons">
+          <li class="list-inline-item">
+            <a href="https://youtube.com" target="_blank">
+              <i class="bi bi-youtube fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://instagram.com" target="_blank">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://facebook.com" target="_blank">
+              <i class="bi bi-facebook fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+</section>
+<footer class="footer fixed-bottom text-center">
+  <article class="container">
+    <p>© Alle Rechten Voorbehouden</p>
+  </article>
+</footer>
+</body> 
+</html>
