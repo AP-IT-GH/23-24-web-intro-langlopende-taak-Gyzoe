@@ -108,8 +108,14 @@
 
  .navbar-nav {
     margin-left: auto;
+    display: flex;
+    justify-content: center;
  }
+ .navbar-nav .nav-item {
+    margin: 0 10px; /* Ruimte tussen de items aanpassen indien nodig */
+}
 
  .navbar-nav .nav-link {
-    font-size: 24px; /* Pas deze waarde aan naar jouw voorkeur */
+    font-size: 30px; /* Pas deze waarde aan naar jouw voorkeur */
 }
+
