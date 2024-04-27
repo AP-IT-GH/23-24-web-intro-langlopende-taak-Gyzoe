@@ -2,28 +2,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid #ccc;
+    border: 0px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
 }
 
 .person {
-    width: 45%;
+    width: 48%;
     border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: #f8f8f8; /* Blauwe achtergrond voor persoon 1 */
+    background-color: #ffffff; /* Blauwe achtergrond voor persoon 1 */
 }
 .person-info {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+.placeholder {
+    color: #ffffff;
 }
 
 .person:nth-child(even) {
-    background-color: #f8f8f8; /* Groene achtergrond voor persoon 2 */
+    background-color: #ffffff; /* Groene achtergrond voor persoon 2 */
 }
 
 .person h2 {
@@ -32,7 +35,7 @@
 
 .person-photo {
     flex-shrink: 0;
-    width: 300px; /* Breedte van de foto */
+    width: 325px; /* Breedte van de foto */
     margin-right: 20px;
 }
 
@@ -44,11 +47,12 @@
 }
 
 .additional-info {
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 .contact-details p {
-    margin: 5px;
+    margin: 2px;
+    
 }
 .message-container {
     width: 100%;
@@ -61,50 +65,43 @@
     flex-direction: column;
 
 }
-
-.message-container h2 {
-    margin-top: 0;
-}
-
-.message-container form {
-    max-width: 400px;
-    margin: 0;
-
-}
-
-.message-container label,
-.message-container textarea {
-    width: calc(100% - 22px); /* Minus 22px voor de padding en border */
-    padding: 8px; /* Ruimte binnen het tekstvak */
-    border: 1px solid #000; /* Zwarte rand rond het tekstvak */
-    border-radius: 5px; /* Afgeronde hoeken */
-}
-
-.message-container textarea:focus {
-    outline: none; /* Verwijder de standaard focus outline */
-}
-.message-container button {
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
     display: block;
-    width: flex;
-}
-
-.message-container button {
-    margin-top: 10px;
-    background-color: #ff6600; /* Oranje achtergrondkleur voor de knop */
-    color: #fff; /* Tekstkleur wit */
-    border: 1px solid #ff6600; /* Rand rond de knop in dezelfde kleur */
-    border-radius: 5px; /* Afgeronde hoeken */
-    padding: 8px 12px; /* Ruimte binnen de knop */
-    cursor: pointer; /* Cursor verandert naar een handje wanneer je over de knop gaat */
-    transition: background-color 0.3s, color 0.3s; /* Vloeiende overgang voor achtergrondkleur en tekstkleur */
-}
-
-.message-container button:hover {
-    background-color: #ff8533; /* Oranje achtergrondkleur bij hover */
-    border-color: #ff8533; /* Randkleur bij hover */
-}
-
-
+    font-weight: bold;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .form-group textarea {
+    height: 150px;
+  }
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
 
  .navbar-nav {
     margin-left: auto;

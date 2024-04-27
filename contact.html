@@ -14,6 +14,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="./css/style.css" rel="stylesheet">
+    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="./css/mapStyle.css">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+  <script src="./js/mapScript.js" defer></script>
+    
     <style> 
       nav {
         background-color: rgb(235, 232, 232);
@@ -27,7 +34,7 @@
 <body class="p-0 m-0 border-0 bd-example">
   <nav class="navbar navbar-expand-md text-center" >
     <section class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./images/onepucnhman.jpeg" alt="LOGO HIER" width="100" height="100">
+      <a class="navbar-brand" href="#"><img src="./assets/onepucnhman.jpeg" alt="LOGO HIER" width="100" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,135 +60,73 @@
           </li>
         </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-        <button class="btn btn-sm btn-outline-primary" type="submit" style="color: chartreuse;">zoeken</button>
+        <input class="form-control me-2 text-start" type="search" placeholder="Zoeken..." aria-label="Search">
+        <button class="btn btn-me" type="submit" style="color: rgb(196, 196, 196);"><i class="bi bi-search"></i></button>
       </form>
       </article>
     </section>
   </nav>
 <style></style>
-<h3>Ons team</h3>
-
-
-
 
 
 <div class="form-container">
   <div class="person bg">
       <div class="person-info">
           <div class="person-photo">
-              <img src="./images/admin.jpg" alt="Foto van Admin">
+              <img src="./assets/admin.jpg" alt="Foto van Admin">
           </div>
           <div class="additional-info">
               <h3>MATTIJS GYS</h3>
               <h4>ADMIN</h4>
-              <p>Extra informatie over Admin irem Loreus, eveniet dolorum, mollitia perspiciatis magni molestias fugit eos vero et adipisci. Nisi ullam quos, atque est cupiditate ea quam voluptatem. </p>
+              <p>"Het delen van informatie voor anderen is voor mij het belangrijkste aan deze website, ik hoop anderen meer te kunnen informeren en helpen op onze site."  </p>
               <div class="contact-details">
-                <p>Naam: Mattijs Gys</p>
+                <p><br><br><br><br><br><br>Naam: Mattijs Gys </p>
                 <p>E-mail: s154856@ap.be</p>
                 <p>Telefoon: +32485171911</p>
               </div>
           </div>
       </div>
   </div>
-  <div class="person green-bg">
+  <div class="person bg">
       <div class="person-info">
           <div class="person-photo">
-              <img src="./images/webdesign.jpg" alt="Foto van Webdesigner">
+              <img src="./assets/webdesign.jpg" alt="Foto van Webdesigner">
           </div>
           <div class="additional-info">
               <h3>BART SIMSPON</h3>
               <h4>WEBDESIGNER</h4>
-              <p>Extra informatie over Webdesigner irem de, minima dolore  veniam aliquid vel repellendus, eos nulla non eum accusantium culpa maxime saepe quia delectus!</p>
+              <p>"Het maken van een website is voor mij meer dan alleen een hobby; het is een manier om mijn creativiteit te uiten en anderen te inspireren. Als webdesigner heb ik met veel toewijding en enthousiasme gewerkt aan het ontwerpen en ontwikkelen van onze website."</p>
               <div class="contact-details">
-                <p>Naam: Bart Simpson</p>
+                <p><br><br><br>Naam: Bart Simpson</p>
                 <p>E-mail: bart@it.be</p>
                 <p>Telefoon: 0485171911</p>
               </div>
           </div>
       </div>
   </div>
-  <div class="message-container">
-      <h2>Bericht versturen</h2>
-      <form>
-          <textarea id="bericht" name="bericht" rows="4" cols="50"></textarea><br>
-          <button type="submit">Versturen</button>
-      </form>
-  </div>
 </div>
 
-<section id="contact" class="row">
-  <div class="col-12 mb-3">
-    <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
-    <hr>
+<div class="contact-form">
   <form action="#" method="post">
-    <fieldset class="row g-3 mb-3">
-      <legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
-      <div class="col-md-6">
-        <label for="firstName" class="form-label">voornaam <span>*</span></label>
-        <input type="text" class="form-control" id="firstName" required>
-      </div>
-      <div class="col-md-6">
-        <label for="lastName" class="form-label">achternaam <span>*</span></label>
-        <input type="text" class="form-control" id="lastName" required>
-      </div>
-      <div class="col-6">
-        <label for="mobile" class="form-label">mobiel</label>
-        <input type="tel" class="form-control" id="mobile" placeholder="0412 34 56 78">
-      </div>
-      <div class="col-6">
-        <label for="birthDate" class="form-label">geboortedatum</label>
-        <input type="date" class="form-control" id="birthDate">
-      </div>
-    </fieldset>
-
-    <fieldset class="row g-3 mb-3 mt-3">
-      <legend class="text-uppercase fs-6 fw-bolder pt-3">accountgegevens</legend>
-      <div class="col-12">
-        <label for="mail" class="form-label">e-mail <span>*</span></label>
-        <input type="email" class="form-control" id="mail" required>
-      </div>
-      <div class="col-md-6">
-        <label for="password1" class="form-label">paswoord <span>*</span></label>
-        <input type="password" class="form-control" id="password1"
-          placeholder="min 8 karakters,1 cijfer, 1 hoofdletter" required>
-      </div>
-      <div class="col-md-6">
-        <label for="password2" class="form-label">bevestig paswoord <span>*</span></label>
-        <input type="password" class="form-control" id="password2" required>
-      </div>
-    </fieldset>
-
-    <fieldset class="row g-3 mb-3 mt-3">
-      <legend class="text-uppercase fs-6 fw-bolder pt-3">adresgegevens</legend>
-      <div class="col-12">
-        <label for="address" class="form-label">adres <span>*</span></label>
-        <input type="text" class="form-control" id="address" required>
-      </div>
-      <div class="col-6 col-md-3">
-        <label for="postalcode" class="form-label">postcode <span>*</span></label>
-        <input type="text" class="form-control" id="postalcode" required>
-      </div>
-      <div class="col-6 col-md-5">
-        <label for="city" class="form-label">stad <span>*</span></label>
-        <input type="text" class="form-control" id="city" required>
-      </div>
-      <div class="col-md-4">
-        <label for="countryCode" class="form-label">kies een land <span>*</span></label>
-        <select id="countryCode" class="form-select">
-          <option value="BE" selected>België</option>
-          <option value="DE">Duitsland</option>
-          <option value="FR">Frankrijk</option>
-          <option value="LU">Luxemburg</option>
-          <option value="NL">Nederland</option>
-          <option value="UK">Verenigd Koninkrijk</option>
-        </select>
-      </div>
-    </fieldset>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">verzenden</button>
+    <div class="form-group">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Onderwerp:</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Verzenden</button>
     </div>
   </form>
-
-</section>
+</div>
 </body>
