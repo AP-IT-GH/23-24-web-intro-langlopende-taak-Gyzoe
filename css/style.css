@@ -14,7 +14,7 @@
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: #ffffff; /* Blauwe achtergrond voor persoon 1 */
+    background-color: #ffffff; 
 }
 .person-info {
     display: flex;
@@ -26,7 +26,7 @@
 }
 
 .person:nth-child(even) {
-    background-color: #ffffff; /* Groene achtergrond voor persoon 2 */
+    background-color: #ffffff; 
 }
 
 .person h2 {
@@ -35,7 +35,7 @@
 
 .person-photo {
     flex-shrink: 0;
-    width: 325px; /* Breedte van de foto */
+    width: 325px; 
     margin-right: 20px;
 }
 
@@ -48,6 +48,8 @@
 
 .additional-info {
     margin-top: 2px;
+    flex-grow: 1;
+    max-width: 50%;
 }
 
 .contact-details p {
@@ -56,7 +58,7 @@
 }
 .message-container {
     width: 100%;
-    background-color: #ffd699; /* Kleur van de berichtcontainer */
+    background-color: #ffd699; 
     padding: 20px;
     border-radius: 5px;
     margin: 0 auto;
@@ -111,28 +113,72 @@
     justify-content: center;
  }
  .navbar-nav .nav-item {
-    margin: 0 10px; /* Ruimte tussen de items aanpassen indien nodig */
+    margin: 0 10px; 
 }
 
  .navbar-nav .nav-link {
-    font-size: 30px; /* Pas deze waarde aan naar jouw voorkeur */
+    font-size: 30px; 
 }
 
 .support-container {
     background-color: #dadada;
 }
-    /* Stijl voor het kader */
-    .uitleg-kader {
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
     
-    /* Stijl voor de foto */
-    .profiel-foto {
-        float: left; /* Zorg ervoor dat de foto naast de tekst staat */
-        margin-right: 20px; /* Ruimte tussen de foto en de tekst */
-        border-radius: 50%; /* Maak de foto rond */
-        border: 2px solid #ccc; /* Rand rond de foto */
+.uitleg-kader {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+    
+    
+.profiel-foto {
+    float: left; 
+    margin-right: 20px; 
+    border-radius: 50%; 
+    border: 2px solid #ccc; 
+}
+
+.foto {
+    text-align: center;
+    margin-top: 50px;
     }
+
+.person-photo-2 {
+   flex-shrink: 0;
+    width: 550px; 
+    margin-right: 20px;
+    position: relative; /* Zorgt ervoor dat z-index werkt */
+    z-index: 1; /* Maakt de inhoud van .person-photo-2 bovenop de achtergrond */
+
+}
+.form-container-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 2px;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 20px;
+    min-width: 100%; /* Optioneel: stel een minimale breedte in */
+    min-height: 100%; /* Optioneel: stel een minimale hoogte in */
+
+    
+}
+.background-foto {
+    background-image: url('./assets/sfeerbeeld.jpg');
+    background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding de hele sectie bedekt */
+    background-position: center; /* Plaatst de achtergrondafbeelding in het midden van de sectie */
+    /* Voeg eventueel andere achtergrondstijlen toe zoals background-repeat, background-attachment, etc. */
+
+}
+.person-info-2 {
+    display: flex;
+    flex-direction: row; /* Plaats de items naast elkaar in een rij */
+    align-items: flex-start; /* Aligneer items aan de bovenkant van de sectie */
+}
+.additional-info-2 {
+    margin-top: 2px;
+    flex-grow: 1;
+    min-width: 600px;
+}
