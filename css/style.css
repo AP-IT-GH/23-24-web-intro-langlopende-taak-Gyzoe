@@ -47,6 +47,7 @@
 }
 
 .additional-info {
+    margin: 7px;
     margin-top: 2px;
     flex-grow: 1;
     max-width: 50%;
@@ -133,9 +134,11 @@
     
     
 .profiel-foto img {
-    max-width: 90%; /* Zorg ervoor dat de afbeeldingen niet breder zijn dan de container */
-    height: auto; /* Behoud de aspect ratio van de afbeeldingen */
-    border: 1px solid #ccc; /* Voeg eventueel een rand toe om de afbeeldingen te omlijsten */
+    flex-shrink: 0;
+    max-width: 400px; /* Zorg ervoor dat de afbeeldingen niet breder zijn dan de container */
+    height: 200px; /* Behoud de aspect ratio van de afbeeldingen */
+    object-fit: cover;
+    border: 1px solid #040404; /* Voeg eventueel een rand toe om de afbeeldingen te omlijsten */
 }
 
 .foto {
