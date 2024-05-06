@@ -196,3 +196,18 @@
 input[type="checkbox"]:checked + .indicator {
     background-color: #277ed5;
 }
+
+.bg-image {
+    background-image: url(https://36379.fs1.hubspotusercontent-na1.net/hubfs/36379/Social%20media%20apps%20-%20Vet%20Digital.jpg); /* URL van de achtergrondfoto */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Hoogte van de achtergrondfoto aanpassen aan de gewenste grootte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255); /* Tekstkleur aanpassen voor contrast */
+  }
+  
+  .container {
+    padding: 50px 0; /* Voeg wat ruimte toe boven en onder de inhoud */
+  }
