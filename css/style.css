@@ -132,11 +132,10 @@
 }
     
     
-.profiel-foto {
-    float: left; 
-    margin-right: 20px; 
-    border-radius: 50%; 
-    border: 2px solid #ccc; 
+.profiel-foto img {
+    max-width: 90%; /* Zorg ervoor dat de afbeeldingen niet breder zijn dan de container */
+    height: auto; /* Behoud de aspect ratio van de afbeeldingen */
+    border: 1px solid #ccc; /* Voeg eventueel een rand toe om de afbeeldingen te omlijsten */
 }
 
 .foto {
@@ -181,4 +180,16 @@
     margin-top: 2px;
     flex-grow: 1;
     min-width: 600px;
+}
+.indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid #2c7bd5;
+}
+
+input[type="checkbox"]:checked + .indicator {
+    background-color: #277ed5;
 }
