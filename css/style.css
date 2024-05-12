@@ -210,6 +210,6 @@ input[type="checkbox"]:checked + .indicator {
   
   .container {
     padding: 50px 0; /* Voeg wat ruimte toe boven en onder de inhoud */
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
