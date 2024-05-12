@@ -28,69 +28,84 @@
       body {
         background-color: rgb(255, 255, 255);
       }
+      .bg-image6 {
+        background-image: url(https://i.pinimg.com/564x/13/f5/07/13f507317af7ab4305c15388ffce0e82.jpg); /* URL van de achtergrondfoto */
+        background-size: cover;
+        background-position: center;
+        height: 300px; /* Hoogte van de achtergrondfoto aanpassen aan de gewenste grootte */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0); /* Tekstkleur aanpassen voor contrast */
+      }
     </style>
   </head>
 
 <body class="p-0 m-0 border-0 bd-example">
-  <nav class="navbar navbar-expand-md text-center" >
-    <section class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./assets/foto logo.png" alt="LOGO HIER" width="100" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-      <article class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item text-center">
-            <a class="nav-link  active" aria-current="page"  href="index.html">HOME</a>
-          <li class="nav-item">
-            <a class="nav-link" href="diensten.html">DIENSTEN</a>
+  <header>
+    <nav class="navbar navbar-expand-md text-center" >
+      <section class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/foto logo.png" alt="LOGO HIER" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <article class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item text-center">
+              <a class="nav-link  active" aria-current="page"  href="index.html">HOME</a>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              DIENSTEN
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="internetgebruikers.html">Internetgebruikers</a></li>
-              <li><a class="dropdown-item" href="onlinewinkelen.html">Online winkelen</a></li>
-              <li><a class="dropdown-item" href="informatiebron.html">informatiebron</a></li>
-              <li><a class="dropdown-item" href="werkhulpmiddel.html"> Werken met internet</a></li>
-              <li><a class="dropdown-item" href="ontspanning.html"> ontspannen met internet</a></li>
-              <li><a class="dropdown-item" href="inkomsten.html"> Geld verdienen met internet</a></li>
-            </ul>
-          </li>
-        </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 text-start" type="search" placeholder="Zoeken..." aria-label="Search">
-        <button class="btn btn-me" type="submit" style="color: rgb(196, 196, 196);"><i class="bi bi-search"></i></button>
-      </form>
-      </article>
-    </section>
-  </nav>
-<section class="form-container-2">
-    <article class="person bg">
-      <section class="person-info-2">
-          <article class="person-photo-2">
-              <img src="./assets/foto van mij.jpg" alt="Foto van Admin">
-          </article>
-          <section class="additional-info-2">
-              <h3>MATTIJS GYS</h3>
-              <br><br>
-              <p>Als fervent internetgebruiker ben ik altijd gefascineerd geweest door de kracht van het online platform en de onbegrensde mogelijkheden die het biedt. Mijn passie voor het internet strekt zich uit van het ontdekken van nieuwe technologieën tot het begrijpen van de impact ervan op ons dagelijks <br><br>
+              <a class="nav-link" href="diensten.html">DIENSTEN</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DIENSTEN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="internetgebruikers.html">Internetgebruikers</a></li>
+                <li><a class="dropdown-item" href="onlinewinkelen.html">Online winkelen</a></li>
+                <li><a class="dropdown-item" href="informatiebron.html">informatiebron</a></li>
+                <li><a class="dropdown-item" href="werkhulpmiddel.html"> Werken met internet</a></li>
+                <li><a class="dropdown-item" href="ontspanning.html"> ontspannen met internet</a></li>
+                <li><a class="dropdown-item" href="inkomsten.html"> Geld verdienen met internet</a></li>
+              </ul>
+            </li>
+          </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 text-start" type="search" placeholder="Zoeken..." aria-label="Search">
+          <button class="btn btn-me" type="submit" style="color: rgb(196, 196, 196);"><i class="bi bi-search"></i></button>
+        </form>
+        </article>
+      </section>
+    </nav>
+  </header>
+  <main>
+  <section class="container-fluid bg-image6"></section>
+    <section class="form-container-2">
+        <article class="person bg">
+          <section class="person-info-2">
+              <article class="person-photo-2">
+                  <img src="./assets/foto van mij.jpg" alt="Foto van Admin">
+              </article>
+              <section class="additional-info-2">
+                  <h3>MATTIJS GYS</h3>
+                  <br><br>
+                  <p>Als fervent internetgebruiker ben ik altijd gefascineerd geweest door de kracht van het online platform en de onbegrensde mogelijkheden die het biedt. Mijn passie voor het internet strekt zich uit van het ontdekken van nieuwe technologieën tot het begrijpen van de impact ervan op ons dagelijks <br><br>
 
-                Door mijn eigen ervaringen en observaties ben ik me steeds meer bewust geworden van de complexiteit en uitdagingen die gepaard gaan met internetgebruik. Van privacykwesties tot digitale veiligheid en informatieoverbelasting, er zijn talloze aspecten van het online leven die aandacht verdienen. <br><br>
+                   Door mijn eigen ervaringen en observaties ben ik me steeds meer bewust geworden van de complexiteit en uitdagingen die gepaard gaan met internetgebruik. Van privacykwesties tot digitale veiligheid en informatieoverbelasting, er zijn talloze aspecten van het online leven die aandacht verdienen. <br><br>
                 
-                Het is mijn diepgewortelde overtuiging dat het delen van kennis en bewustwording over deze onderwerpen essentieel is in onze moderne samenleving. Daarom heb ik besloten om een website te maken die zich richt op internetgebruik, waar ik informatie, tips en hulpmiddelen kan delen om anderen te helpen zich bewust te worden van de kansen en uitdagingen die het internet met zich meebrengt.<br><br>
+                    Het is mijn diepgewortelde overtuiging dat het delen van kennis en bewustwording over deze onderwerpen essentieel is in onze moderne samenleving. Daarom heb ik besloten om een website te maken die zich richt op internetgebruik, waar ik informatie, tips en hulpmiddelen kan delen om anderen te helpen zich bewust te worden van de kansen en uitdagingen die het internet met zich meebrengt.<br><br>
                 
-                Mijn doel is om een gemeenschap te creëren waar mensen kunnen leren, inspireren en samenwerken om het beste uit het internet te halen, terwijl ze tegelijkertijd bewust blijven van de mogelijke valkuilen. Met deze website hoop ik anderen te informeren, empoweren en een positieve impact te hebben op hun digitale ervaring. </p>
-          </section>
-    </article>
-<footer class="footer fixed-bottom text-center">
-  <article class="container">
-    <p>© Alle Rechten Voorbehouden</p>
-  </article>
-</footer>
-</section>
+                    Mijn doel is om een gemeenschap te creëren waar mensen kunnen leren, inspireren en samenwerken om het beste uit het internet te halen, terwijl ze tegelijkertijd bewust blijven van de mogelijke valkuilen. Met deze website hoop ik anderen te informeren, empoweren en een positieve impact te hebben op hun digitale ervaring. </p>
+              </section>
+        </article>
+  </main>
+    <footer class="footer fixed-bottom text-center">
+      <article class="container">
+        <p>© Alle Rechten Voorbehouden</p>
+      </article>
+    </footer>
+      </section>
 </body>

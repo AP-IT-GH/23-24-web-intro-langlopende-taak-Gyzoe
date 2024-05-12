@@ -213,3 +213,14 @@ input[type="checkbox"]:checked + .indicator {
     padding-left: 300px;
     padding-right: 300px;
   }
+
+  .bg-image2 {
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quest.nl%2Ftech%2Ftechnologie%2Fa41967159%2Fwat-maakt-internet-zo-snel%2F&psig=AOvVaw0Gex7snilJ7_SKKih4gibH&ust=1715625470264000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJDt74vhiIYDFQAAAAAdAAAAABAD); /* URL van de achtergrondfoto */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Hoogte van de achtergrondfoto aanpassen aan de gewenste grootte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255); /* Tekstkleur aanpassen voor contrast */
+  }
