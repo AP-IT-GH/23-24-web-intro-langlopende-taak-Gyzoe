@@ -14,6 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="./css/style.css" rel="stylesheet">
+
+        <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
     <link rel="stylesheet" href="./css/mapStyle.css">
     <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
@@ -69,109 +74,117 @@
       </article>
     </section>
   </nav>
-
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section id="map"  class="row">
+          <div id="apMap" class="col-12 mb-3"></div>
+      </section>
+      </main>
+    </div>
+  </div> 
 <main>
-<section class="form-container">
-  <article class="person bg">
-      <section class="person-info">
-          <article class="person-photo">
-              <img src="./assets/foto van de admin.jpg" alt="Foto van Admin">
-          </article>
-          <section class="additional-info">
-              <h3>MATTIJS GYS</h3>
-              <h5>ADMIN</h5>
-              <br>
-              <p>"Het delen van informatie voor anderen is voor mij het belangrijkste aan deze website, ik hoop anderen meer te kunnen informeren en helpen op onze site."  </p>
-              <section class="contact-details">
-                <p><br><br><br><br><br>Naam: Mattijs Gys </p>
-                <p>E-mail: s154856@ap.be</p>
-                <p>Telefoon: +32485171911</p>
-              </section>
-          </section>
-      </section>
-  </article>
-  <article class="person bg">
-      <section class="person-info">
-          <article class="person-photo">
-              <img src="./assets/foto van de webdesigner.jpg" alt="Foto van Webdesigner">
-          </article>
-          <section class="additional-info">
-              <h3>MATHIAS GOOSER</h3>
-              <h5><em>WEBDESIGNER</em></h5>
-              <br>
-              <p>"Het maken van een website is voor mij meer dan alleen een hobby; het is een manier om mijn creativiteit te uiten en anderen te inspireren. Als webdesigner heb ik met veel toewijding en enthousiasme gewerkt aan het ontwerpen en ontwikkelen van onze website."</p>
-              <section class="contact-details">
-                <p><br>Naam: Mathias Goosens</p>
-                <p>E-mail: mathiasg@it.be</p>
-                <p>Telefoon: 0485171911</p>
-              </section>
-          </section>
-      </section>
-  </article>
-</section>
-<section class="support-container">
-  <section class="row">
-    <section class="col-md-10">
-      <section class="contact-form">
-        <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactformulier</h2>
-        <form action="#" method="post">
-          <section class="form-group">
-            <label for="name">Naam:</label>
-            <input type="text" id="name" name="name" required>
-          </section>
-          <section class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-          </section>
-          <section class="form-group">
-            <label for="subject">Onderwerp:</label>
-            <input type="text" id="subject" name="subject" required>
-          </section>
-          <section class="form-group">
-            <label for="message">Bericht:</label>
-            <textarea id="message" name="message" required></textarea>
-          </section>
-          <label>
-            <input type="checkbox" name="role" value="admin">
-            <span class="indicator"></span> Admin
-          </label>
-          <label>
-          <input type="checkbox" name="role" value="webdesigner">
-            <span class="indicator"></span> Webdesigner
-          </label>
-          <section class="form-group">
-            <button type="submit">Verzenden</button>
-          </section>
-        </form>
-      </section>
-    </section>
-    <aside class="col-md-2">
-      <section class="contact-info">
-        <br><br>
-        <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contact</h2>
-        <p>E-mail: <a href="mailto:site@ap.be">siteinfo@ap.be</a></p>
-        <p>Nummer: +32485171911</p>
-        <ul class="list-inline social-icons">
-          <li class="list-inline-item">
-            <a href="https://youtube.com" target="_blank">
-              <i class="bi bi-youtube fs-3"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://instagram.com" target="_blank">
-              <i class="bi bi-instagram fs-3"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://facebook.com" target="_blank">
-              <i class="bi bi-facebook fs-3"></i>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </aside>
+  <section class="form-container">
+    <article class="person bg">
+        <section class="person-info">
+            <article class="person-photo">
+                <img src="./assets/foto van de admin.jpg" alt="Foto van Admin">
+            </article>
+            <section class="additional-info">
+                <h3>MATTIJS GYS</h3>
+                <h5>ADMIN</h5>
+                <br>
+                <p>"Het delen van informatie voor anderen is voor mij het belangrijkste aan deze website, ik hoop anderen meer te kunnen informeren en helpen op onze site."  </p>
+                <section class="contact-details">
+                  <p><br><br><br><br><br>Naam: Mattijs Gys </p>
+                  <p>E-mail: s154856@ap.be</p>
+                  <p>Telefoon: +32485171911</p>
+                </section>
+            </section>
+        </section>
+    </article>
+    <article class="person bg">
+        <section class="person-info">
+            <article class="person-photo">
+                <img src="./assets/foto van de webdesigner.jpg" alt="Foto van Webdesigner">
+            </article>
+            <section class="additional-info">
+                <h3>MATHIAS GOOSER</h3>
+                <h5><em>WEBDESIGNER</em></h5>
+                <br>
+                <p>"Het maken van een website is voor mij meer dan alleen een hobby; het is een manier om mijn creativiteit te uiten en anderen te inspireren. Als webdesigner heb ik met veel toewijding en enthousiasme gewerkt aan het ontwerpen en ontwikkelen van onze website."</p>
+                <section class="contact-details">
+                  <p><br>Naam: Mathias Goosens</p>
+                  <p>E-mail: mathiasg@it.be</p>
+                  <p>Telefoon: 0485171911</p>
+                </section>
+            </section>
+        </section>
+    </article>
   </section>
-</section>
+  <section class="support-container">
+    <section class="row">
+      <section class="col-md-10">
+        <section class="contact-form">
+          <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contactformulier</h2>
+          <form action="#" method="post">
+            <section class="form-group">
+              <label for="name">Naam:</label>
+              <input type="text" id="name" name="name" required>
+            </section>
+            <section class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </section>
+            <section class="form-group">
+              <label for="subject">Onderwerp:</label>
+              <input type="text" id="subject" name="subject" required>
+            </section>
+            <section class="form-group">
+              <label for="message">Bericht:</label>
+              <textarea id="message" name="message" required></textarea>
+            </section>
+            <label>
+              <input type="checkbox" name="role" value="admin">
+              <span class="indicator"></span> Admin
+            </label>
+            <label>
+            <input type="checkbox" name="role" value="webdesigner">
+              <span class="indicator"></span> Webdesigner
+            </label>
+            <section class="form-group">
+              <button type="submit">Verzenden</button>
+            </section>
+          </form>
+        </section>
+      </section>
+      <aside class="col-md-2">
+        <section class="contact-info">
+          <br><br>
+          <h2 class="text-uppercase fs-4 fw-bolder pt-3">Contact</h2>
+          <p>E-mail: <a href="mailto:site@ap.be">siteinfo@ap.be</a></p>
+          <p>Nummer: +32485171911</p>
+          <ul class="list-inline social-icons">
+            <li class="list-inline-item">
+              <a href="https://youtube.com" target="_blank">
+                <i class="bi bi-youtube fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://instagram.com" target="_blank">
+                <i class="bi bi-instagram fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://facebook.com" target="_blank">
+                <i class="bi bi-facebook fs-3"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </section>
+  </section>
 </main>
 <footer class="footer fixed-bottom text-center">
   <article class="container">

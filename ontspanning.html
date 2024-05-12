@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>ontspanning</title>
     <!-- reset jouw css -->
     <link href="./css/reset.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -14,12 +14,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="./css/style.css" rel="stylesheet">
+
+           <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
     <link rel="stylesheet" href="./css/mapStyle.css">
     <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-  <script src="./js/mapScript.js" defer></script>
+  <script src="./js/mapscrip3.js" defer></script>
     
     <style> 
       nav {
@@ -28,44 +33,102 @@
       body {
         background-color: rgb(255, 255, 255);
       }
+      .bg-image5 {
+        background-image: url(https://i.pinimg.com/564x/5f/97/e4/5f97e4d49ed3c247f5b1fa1048cd6cff.jpg); /* URL van de achtergrondfoto */
+        background-size: cover;
+        background-position: center;
+        height: 300px; /* Hoogte van de achtergrondfoto aanpassen aan de gewenste grootte */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255); /* Tekstkleur aanpassen voor contrast */
+      }
     </style>
   </head>
 
 <body class="p-0 m-0 border-0 bd-example">
-  <nav class="navbar navbar-expand-md text-center" >
-    <section class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./assets/foto logo.png" alt="LOGO HIER" width="100" height="100">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-      <article class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item text-center">
-            <a class="nav-link" href="index.html">HOME</a>
-          <li class="nav-item">
-            <a class="nav-link  active" aria-current="page" href="diensten.html">DIENSTEN</a>
+  <header>
+    <nav class="navbar navbar-expand-md text-center" >
+      <section class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/foto logo.png" alt="LOGO HIER" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <article class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="index.html">HOME</a>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              DIENSTEN
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="internetgebruikers.html">Internetgebruikers</a></li>
-              <li><a class="dropdown-item" href="onlinewinkelen.html">Online winkelen</a></li>
-              <li><a class="dropdown-item" href="informatiebron.html">informatiebron</a></li>
-              <li><a class="dropdown-item" href="werkhulpmiddel.html"> Werken met internet</a></li>
-              <li><a class="dropdown-item" href="ontspanning.html"> ontspannen met internet</a></li>
-              <li><a class="dropdown-item" href="inkomsten.html"> Geld verdienen met internet</a></li>
-            </ul>
-          </li>
-        </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 text-start" type="search" placeholder="Zoeken..." aria-label="Search">
-        <button class="btn btn-me" type="submit" style="color: rgb(196, 196, 196);"><i class="bi bi-search"></i></button>
-      </form>
-      </article>
-    </section>
-  </nav>
+              <a class="nav-link  active" aria-current="page" href="diensten.html">DIENSTEN</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                DIENSTEN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="internetgebruikers.html">Internetgebruikers</a></li>
+                <li><a class="dropdown-item" href="onlinewinkelen.html">Online winkelen</a></li>
+                <li><a class="dropdown-item" href="informatiebron.html">informatiebron</a></li>
+                <li><a class="dropdown-item" href="werkhulpmiddel.html"> Werken met internet</a></li>
+                <li><a class="dropdown-item" href="ontspanning.html"> ontspannen met internet</a></li>
+                <li><a class="dropdown-item" href="inkomsten.html"> Geld verdienen met internet</a></li>
+              </ul>
+            </li>
+          </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 text-start" type="search" placeholder="Zoeken..." aria-label="Search">
+          <button class="btn btn-me" type="submit" style="color: rgb(196, 196, 196);"><i class="bi bi-search"></i></button>
+        </form>
+        </article>
+      </section>
+    </nav>
+  </header>
+  <main>
+  <section class="container-fluid bg-image5">
+    <div class="container text-center">
+      <h1><strong>HET INTERNET ALS INFORMATIEBRON</strong></h1>
+    </div>
+  </section>
+  <section class="container">
+    <h2>Ontspannen met het Internet: Tips voor Digitale Ontstress</h2>
+
+    <p>In een wereld waar het internet een integraal onderdeel van ons dagelijks leven is geworden, is het belangrijk om manieren te vinden om te ontspannen en tot rust te komen te midden van de constante stroom van informatie en prikkels. Gelukkig zijn er verschillende manieren waarop het internet ons kan helpen ontspannen en stress verminderen:</p>
+    
+    <ol>
+      <li><strong>Meditatie en Mindfulness Apps: <br></strong> Talloze apps bieden begeleide meditatiesessies en mindfulness-oefeningen die kunnen helpen om de geest tot rust te brengen en stress te verminderen. Van ademhalingsoefeningen tot geleide visualisaties, deze apps bieden een scala aan tools om te ontspannen en innerlijke rust te vinden.</li>
+      <br>
+      <li><strong>Natuur- en Ontspanningsvideo's: <br></strong> Op platforms zoals YouTube en Vimeo zijn talloze video's te vinden die zich richten op natuurlijke landschappen, ontspannende muziek en rustgevende geluiden zoals kabbelende beekjes en zingende vogels. Deze video's kunnen een kalmerend effect hebben en helpen om stress te verminderen.</li>
+      <br>
+      <li><strong>Digitale Detox Apps: <br></strong> Er zijn apps beschikbaar die specifiek zijn ontworpen om digitale detox te bevorderen door tijdsbeheer, schermbeperkingen en zelfs het blokkeren van bepaalde websites. Door bewust tijd weg te plannen van het scherm, kunnen gebruikers hun relatie met het internet in evenwicht brengen en meer tijd besteden aan offline activiteiten.</li>
+      <br>
+      <li><strong>Online Yoga en Fitnesslessen: <br></strong> Het internet biedt een overvloed aan yoga- en fitnesslessen die gebruikers kunnen volgen vanuit het comfort van hun eigen huis. Of het nu gaat om ontspannende yoga-oefeningen, energieke cardio-workouts of rustgevende stretching-routines, deze online lessen kunnen helpen om zowel lichamelijke als geestelijke spanning te verminderen.</li>
+      <br>
+      <li><strong>Creatieve Uitlaatkleppen: <br></strong> Het internet biedt een platform voor creatieve expressie, waar gebruikers hun artistieke vaardigheden kunnen verkennen en delen. Van het maken van digitale kunstwerken tot het schrijven van blogs en het delen van fotografie, het vinden van een creatieve uitlaatklep kan een therapeutisch effect hebben en stress verminderen.</li>
+      <br>
+      <li><strong>Ontspannende Games en Puzzels: <br></strong> Er zijn talloze online games en puzzels beschikbaar die gericht zijn op ontspanning en vermaak. Van eenvoudige puzzelspelletjes tot kalmerende sandbox-games, deze digitale activiteiten kunnen een leuke en ontspannende manier zijn om de geest te stimuleren en stress te verminderen.</li>
+    </ol>
+    
+    <p>Door bewust gebruik te maken van het internet en te kiezen voor activiteiten die ontspanning en verlichting bevorderen, kunnen we het internet in ons voordeel laten werken en een gezonde balans vinden tussen digitale betrokkenheid en mentale ontspanning.</p>
+        <figure>
+      <img src="assets/foto-ontspanning.jpg" alt="">
+     <figcaption><a href="https://nl.pinterest.com/pin/793689134326003203/">twitch</a></figcaption>
+    </figure>
+  </section>
+    <div class="container">
+      <div class="row">
+        <main class="col-md-9 pe-3">
+          <section id="map"  class="row">
+            <div id="apMap" class="col-12 mb-3"></div>
+        </section>
+        </main>
+      </div>
+    </div> 
+  <footer class="footer fixed-bottom text-center">
+    <article class="container">
+      <p>© Alle Rechten Voorbehouden</p>
+    </article>
+  </footer>
+ </main>
