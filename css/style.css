@@ -8,6 +8,12 @@
     margin-bottom: 20px;
 }
 
+.contact-info {
+    color: #ffffff;
+}
+
+
+
 .person {
     width: 48%;
     border-radius: 5px;
@@ -74,6 +80,7 @@
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #ffffff;
   }
   .form-group {
     margin-bottom: 20px;
@@ -113,16 +120,18 @@
     display: flex;
     justify-content: center;
  }
- .navbar-nav .nav-item {
+ .nav-item {
     margin: 0 10px; 
+    color: #ccc;
 }
 
- .navbar-nav .nav-link {
+.nav-link {
     font-size: 30px; 
+    color: #fff;
 }
 
 .support-container {
-    background-color: #dadada;
+    background-color: rgb(6, 59, 118);
 }
     
 .uitleg-kader {
@@ -130,6 +139,8 @@
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 30px;
+    color: rgb(6, 59, 118);
 }
     
     
@@ -154,6 +165,8 @@
     z-index: 1; /* Maakt de inhoud van .person-photo-2 bovenop de achtergrond */
 
 }
+
+
 .form-container-2 {
     display: flex;
     align-items: flex-start;
@@ -224,3 +237,7 @@ input[type="checkbox"]:checked + .indicator {
     justify-content: center;
     color: rgb(255, 255, 255); /* Tekstkleur aanpassen voor contrast */
   }
+
+    .kleur {
+        color: rgb(229, 51,98);
+    }
